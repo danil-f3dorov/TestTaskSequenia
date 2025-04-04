@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/filmCatalogFragment">
+
+    <fragment
+        android:id="@+id/filmCatalogFragment"
+        android:name="com.example.testtasksekvenia.FilmCatalogFragment"
+        android:label="Каталог фильмов" />
+
+    <fragment
+        android:id="@+id/filmDetailsFragment"
+        android:name="com.example.testtasksekvenia.FilmDetailsFragment"
+        android:label="Детали фильма">
+    </fragment>
+
+</navigation>

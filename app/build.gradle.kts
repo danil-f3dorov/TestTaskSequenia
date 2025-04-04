@@ -44,6 +44,9 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.0")
+    
     implementation(libs.koin.android)
 
     implementation(libs.androidx.core.ktx)
@@ -54,6 +57,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.navigation.fragment)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
