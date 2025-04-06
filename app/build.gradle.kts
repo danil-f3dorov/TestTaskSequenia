@@ -5,15 +5,17 @@ plugins {
 }
 
 android {
-    namespace = "com.example.testtasksekvenia"
+    namespace = "com.example.testtasksequenia"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.testtasksekvenia"
+        applicationId = "com.example.testtasksequenia"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+
+        setProperty("archivesBaseName", "test_task_sequenia $versionName")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -25,6 +27,8 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
+
         }
     }
     compileOptions {
@@ -44,9 +48,10 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.5.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.5.0")
-    
+    implementation(libs.coil.compose)
+
+    implementation(libs.androidx.navigation.fragment.ktx.v250)
+
     implementation(libs.koin.android)
 
     implementation(libs.androidx.core.ktx)

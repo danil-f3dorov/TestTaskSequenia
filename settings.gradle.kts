@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TestTaskSekvenia"
+rootProject.name = "TestTaskSequenia"
 include(":app")
  

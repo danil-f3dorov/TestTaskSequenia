@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.TestTaskSekvenia" parent="@style/Theme.AppCompat.NoActionBar" />
-
+    <style name="Theme.TestTaskSequenia" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
 </resources>
